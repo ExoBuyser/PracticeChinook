@@ -25,13 +25,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{532
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem", "ChinookSystem\ChinookSystem.csproj", "{3762C310-71D9-447A-AA18-ED20D6BCFBAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem.Data", "ChinookSystem.Data\ChinookSystem.Data.csproj", "{7548B3A8-2BCD-4516-8120-A4BA4CFFD127}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{53261DA1-B39F-44CA-926C-0E990C550594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53261DA1-B39F-44CA-926C-0E990C550594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53261DA1-B39F-44CA-926C-0E990C550594}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{53261DA1-B39F-44CA-926C-0E990C550594}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3762C310-71D9-447A-AA18-ED20D6BCFBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3762C310-71D9-447A-AA18-ED20D6BCFBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3762C310-71D9-447A-AA18-ED20D6BCFBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3762C310-71D9-447A-AA18-ED20D6BCFBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7548B3A8-2BCD-4516-8120-A4BA4CFFD127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7548B3A8-2BCD-4516-8120-A4BA4CFFD127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7548B3A8-2BCD-4516-8120-A4BA4CFFD127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7548B3A8-2BCD-4516-8120-A4BA4CFFD127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
