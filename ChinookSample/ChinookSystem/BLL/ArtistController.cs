@@ -13,7 +13,7 @@ using ChinookSystem.DAL;
 namespace ChinookSystem.BLL
 {
     [DataObject]
-    class ArtistController
+    public class ArtistController
     {
         //dump the entire artist entity
         //this will use Entity Framework access to
