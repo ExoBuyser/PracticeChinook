@@ -25,7 +25,7 @@ namespace ChinookSystem.BLL
             //set up transaction area
             using (var context = new ChinookContext())
             {
-                return context.Artist.ToList();
+                return context.Artists.ToList();
             }
         }
 

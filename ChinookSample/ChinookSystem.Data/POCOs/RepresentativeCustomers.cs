@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChinookSystem.Data.POCOs
 {
-    public class MediaTypeTrackCounts
+    public class RepresentativeCustomers
     {
         public string Name { get; set; }
-        public int TrackCount { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
     }
 }

@@ -44,12 +44,16 @@
   <ItemGroup>
     <Compile Include="Entities\Album.cs" />
     <Compile Include="Entities\Artist.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\MediaType.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="POCOs\AlbumTrackSummary.cs" />
     <Compile Include="POCOs\ArtistAlbums.cs" />
     <Compile Include="POCOs\CustomerContact.cs" />
+    <Compile Include="POCOs\EmployeeNameList.cs" />
     <Compile Include="POCOs\MediaTypeTrackCounts.cs" />
+    <Compile Include="POCOs\RepresentativeCustomers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

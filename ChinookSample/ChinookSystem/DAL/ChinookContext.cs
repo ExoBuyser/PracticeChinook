@@ -17,21 +17,23 @@ namespace ChinookSystem.DAL
     //System.Data.Entity
 
     internal class ChinookContext:DbContext
-    {   
+    {
         //pass the connection string name to the
         //DbContext using the :base()
 
-        public ChinookContext():base("ChinookDB")
+        public ChinookContext() : base("ChinookDB")
         {
 
         }
 
         //setup DbSet properties
-        public DbSet<Artist> Artist { get; set; }
+        public DbSet<Artist> Artists { get; set; }
         public DbSet<Album> Albums { get; set; }
         public DbSet<Track> Tracks { get; set; }
         public DbSet<MediaType> MediaTypes { get; set; }
 
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
     }
 }
