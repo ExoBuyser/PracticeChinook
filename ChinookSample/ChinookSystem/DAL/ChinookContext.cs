@@ -20,7 +20,6 @@ namespace ChinookSystem.DAL
     {
         //pass the connection string name to the
         //DbContext using the :base()
-
         public ChinookContext() : base("ChinookDB")
         {
 
