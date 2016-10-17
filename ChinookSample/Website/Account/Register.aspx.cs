@@ -15,6 +15,11 @@ public partial class Account_Register : Page
         IdentityResult result = manager.Create(user, Password.Text);
         if (result.Succeeded)
         {
+            //this method will add the new registered user
+            //to the role of RegisteredUser
+            //this will be recorded in the AspNetUserRoles
+
+            manager.AddToRole(user.Id, SecurityRoles.RegisteredUser);
             IdentityHelper.SignIn(manager, user, isPersistent: false);
             IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
         }

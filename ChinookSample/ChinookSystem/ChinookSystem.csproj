@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\ArtistController.cs" />
+    <Compile Include="BLL\CustomerController.cs" />
+    <Compile Include="BLL\EmployeeController.cs" />
     <Compile Include="DAL\ChinookContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\ApplicationDbContext.cs" />

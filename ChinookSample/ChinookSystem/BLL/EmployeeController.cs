@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#region Additional Namespaces
+#region Additonal Namespaces
 using System.ComponentModel; //ODS
 using ChinookSystem.Data.Entities;
 using ChinookSystem.Data.POCOs;
@@ -16,7 +16,7 @@ namespace ChinookSystem.BLL
     [DataObject]
     public class EmployeeController
     {
-        [DataObjectMethod(DataObjectMethodType.Select,false)]
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<EmployeeNameList> EmployeeNameList_Get()
         {
             using (var context = new ChinookContext())

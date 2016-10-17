@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChinookSystem.Security
 {
-    internal static class SecurityRoles
+    public static class SecurityRoles
     {
         public const string WebsiteAdmins = "WebsiteAdmins";
         public const string RegisteredUser = "RegisteredUser";
@@ -14,7 +14,7 @@ namespace ChinookSystem.Security
         public const string Auditor = "Auditor";
 
         //readonly
-        public static List<string> StartupSecurityRoles
+        internal static List<string> StartupSecurityRoles
         {
             get
             {

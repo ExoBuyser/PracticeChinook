@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#region Additional Namespaces
+#region Additonal Namespaces
 using System.ComponentModel; //ODS
 using ChinookSystem.Data.Entities;
 using ChinookSystem.Data.POCOs;
@@ -38,4 +38,3 @@ namespace ChinookSystem.BLL
         }
     }
 }
-
