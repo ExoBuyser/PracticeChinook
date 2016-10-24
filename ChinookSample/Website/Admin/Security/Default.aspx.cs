@@ -14,4 +14,19 @@ public partial class Admin_Security_Default : System.Web.UI.Page
     {
 
     }
+
+    protected void RoleListView_ItemDeleted(object sender, ListViewDeletedEventArgs e)
+    {
+        DataBind();
+    }
+
+    protected void RoleListView_ItemInserted(object sender, ListViewInsertedEventArgs e)
+    {
+        DataBind();
+    }
+
+    protected void RefreshAll(object sender, EventArgs e)
+    {
+        DataBind();
+    }
 }

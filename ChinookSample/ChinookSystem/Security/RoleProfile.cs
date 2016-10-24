@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChinookSystem.Security
 {
-    class RoleProfile
+    public class RoleProfile
     {
         public string RoleID { get; set; }
         public string RoleName { get; set; }
