@@ -43,7 +43,7 @@ namespace ChinookSystem.Security
             var results = from role in Roles.ToList()
                           select new RoleProfile
                           {
-                              RoleID = role.Id, //security table
+                              RoleId = role.Id, //security table
                               RoleName = role.Name,
                               UserName = role.Users.Select(r => um.FindById(r.UserId).UserName)
                           };
@@ -65,7 +65,7 @@ namespace ChinookSystem.Security
         [DataObjectMethod(DataObjectMethodType.Delete, true)]
         public void RemoveRole(RoleProfile role)
         {
-            this.Delete(this.FindById(role.RoleID));
+            this.Delete(this.FindById(role.RoleId));
         }//eom
 
         //this method will produce a list of all role names

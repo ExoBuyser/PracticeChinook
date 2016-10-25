@@ -8,7 +8,7 @@ namespace ChinookSystem.Security
 {
     public class RoleProfile
     {
-        public string RoleID { get; set; }
+        public string RoleId { get; set; }
         public string RoleName { get; set; }
         public IEnumerable<string> UserName { get; set; }
 
