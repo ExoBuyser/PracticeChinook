@@ -41,7 +41,19 @@ namespace ChinookSystem.Data.Entities
         //there are two types of navigation properties
         //properties that point to "children" use ICollection<T>
         //properties that point to "Parent" use ParentName as the datatype
-        public virtual MediaType MediaTypes { get; set; }
-        public virtual Album Albums { get; set; }
+        public virtual MediaType MediaType { get; set; }
+        public virtual Album Album { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual ICollection<InvoiceLine> InvoiceLines { get; set; }
+
+        //Tracks may be on one or more PlayList. Each PlayList has one or more Tracks
+        //this many to many relationship was normalized using a table called PlaylistTracks
+        //We can simplify our model by using navigation properties to directly
+        //    represent our many-to-many relationship and thereby omit having to
+        //    create a PlaylistTrack entity
+        //The navigation property set would be as  "children" 
+
+        //Modeling of this relationship will be done in the context class
+        public virtual ICollection<PlayList> PlayLists { get; set; }
     }
 }
