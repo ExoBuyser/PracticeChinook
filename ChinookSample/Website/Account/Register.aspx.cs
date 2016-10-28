@@ -19,7 +19,7 @@ public partial class Account_Register : Page
             //to the role of RegisteredUser
             //this will be recorded in the AspNetUserRoles
 
-            manager.AddToRole(user.Id, SecurityRoles.RegisteredUser);
+            manager.AddToRole(user.Id, SecurityRoles.RegisteredUsers);
             IdentityHelper.SignIn(manager, user, isPersistent: false);
             IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
         }

@@ -9,7 +9,7 @@ namespace ChinookSystem.Security
     public static class SecurityRoles
     {
         public const string WebsiteAdmins = "WebsiteAdmins";
-        public const string RegisteredUser = "RegisteredUser";
+        public const string RegisteredUsers = "RegisteredUser";
         public const string Staff = "Staff";
         public const string Auditor = "Auditor";
 
@@ -20,7 +20,7 @@ namespace ChinookSystem.Security
             {
                 List<string> roleList = new List<string>();
                 roleList.Add(WebsiteAdmins);
-                roleList.Add(RegisteredUser);
+                roleList.Add(RegisteredUsers);
                 roleList.Add(Staff);
                 roleList.Add(Auditor);
 
