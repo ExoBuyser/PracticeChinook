@@ -11,4 +11,9 @@ public partial class Admin_EntityMaintenance_TrackCRUD : System.Web.UI.Page
     {
 
     }
+
+    protected void CheckForException(object sender, ObjectDataSourceStatusEventArgs e)
+    {
+        MessageUserControl.HandleDataBoundException(e);
+    }
 }

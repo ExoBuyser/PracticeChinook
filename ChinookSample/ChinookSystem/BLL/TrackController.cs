@@ -46,7 +46,8 @@ namespace ChinookSystem.BLL
             using (var context = new ChinookContext())
             {
                 //any business rules
-
+                if (trackinfo.UnitPrice > 1.0m)
+                    throw new Exception("Unit price is greater than 1.0m");
                 //any data refinements
 
                 //review of using iif
