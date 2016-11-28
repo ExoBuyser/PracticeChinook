@@ -25,7 +25,6 @@ namespace ChinookSystem.BLL
 
                 return context.Tracks.ToList();
             }
-
         }
 
         [DataObjectMethod(DataObjectMethodType.Select, false)]

@@ -32,12 +32,13 @@
                             <div class="row bginfo">
                                 <div class="col-sm-2 h4">Action</div>
                                 <div class="col-sm-2 h4">User Names</div>
-                                <div class="col-sm-5 h4">Profile</div>
+                                <div class="col-sm-3 h4">Profile</div>
                                 <div class="col-sm-3 h4">Roles</div>
                             </div>
                             <div runat="server" id="itemPlaceHolder">
                             </div>
                         </LayoutTemplate>
+
                         <ItemTemplate>
                             <div class="row">
                                 <div class="col-sm-2">
@@ -47,7 +48,7 @@
                                 <div class="col-sm-2">
                                    <%# Item.UserName %>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-3">
                                    <%# Item.Email %>&nbsp;&nbsp;
                                    <%# Item.FirstName + " " + Item.LastName %>
                                 </div>
@@ -76,7 +77,7 @@
                                         text='<%# BindItem.UserName %>' 
                                         placeholder="User Name"></asp:TextBox>
                                 </div>
-                                 <div class="col-sm-5">
+                                 <div class="col-sm-3">
                                     <asp:TextBox ID="UserEmail" runat="server"
                                         text='<%# BindItem.Email %>' TextMode="Email" 
                                         placeholder="User Email"></asp:TextBox>

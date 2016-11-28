@@ -282,28 +282,32 @@
             </tr>
         </SelectedItemTemplate>
     </asp:ListView>
-    <asp:ObjectDataSource ID="TrackListODS" runat="server" 
-        DataObjectTypeName="ChinookSystem.Data.Entities.Track" 
-        DeleteMethod="DeleteTrack" 
-        InsertMethod="AddTrack" 
+
+    <asp:ObjectDataSource ID="TrackListODS" runat="server"
+        DataObjectTypeName="ChinookSystem.Data.Entities.Track"
+        DeleteMethod="DeleteTrack"
+        InsertMethod="AddTrack"
         SelectMethod="ListTracks"
         UpdateMethod="UpdateTrack"
-        OldValuesParameterFormatString="original_{0}" 
-        TypeName="ChinookSystem.BLL.TrackController" 
-        OnDeleted="CheckForException" 
-        OnInserted="CheckForException" 
+        OldValuesParameterFormatString="original_{0}"
+        TypeName="ChinookSystem.BLL.TrackController"
+        OnDeleted="CheckForException"
+        OnInserted="CheckForException"
         OnUpdated="CheckForException">
     </asp:ObjectDataSource>
+
     <asp:ObjectDataSource ID="AlbumListODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="AlbumList" 
         TypeName="ChinookSystem.BLL.AlbumController">
     </asp:ObjectDataSource>
+
     <asp:ObjectDataSource ID="MediaTypeListODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="MediaTypeList" 
         TypeName="ChinookSystem.BLL.MediaTypeController">
     </asp:ObjectDataSource>
+
     <asp:ObjectDataSource ID="GenreListODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="GenreList" 
